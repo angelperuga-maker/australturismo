@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Austral Lacustre · Viajes privados de lujo · Valdivia y los Siete Lagos</title>
+<meta name="description" content="Colección de viajes privados de lujo en el sur de Chile: Valdivia y la región de los Siete Lagos. Casas frente al agua con muelle propio, concierge 24/7 e itinerarios 100% a medida.">
+<meta name="theme-color" content="#1b2a31">
+<link rel="canonical" href="https://australlacustre.cl/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Austral Lacustre · El sur de Chile, a orillas del agua">
+<meta property="og:description" content="Viajes privados de lujo en Valdivia y los Siete Lagos. Casas con muelle propio, pesca con mosca, navegación privada y ski de volcán.">
+<meta property="og:locale" content="es_CL">
+<meta property="og:image" content="https://images.unsplash.com/photo-1667759318615-757c8ddbfa7a?auto=format&fit=crop&q=80&w=1200">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Hanken+Grotesk:wght@300;400;500;600;700&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+/* =========================================================================
+   AUSTRAL LACUSTRE — landing de turismo de lujo (versión de producción)
+   Un solo archivo, listo para GitHub Pages.
+
+   IMÁGENES: las 9 fotos se cargan desde internet (Unsplash, licencia libre,
+   uso comercial, sin atribución). Para que se vean necesitas estar ONLINE y
+   abrir el archivo en un navegador (o publicarlo en GitHub Pages).
+   Si alguna no carga, se muestra un degradado de respaldo (no queda en blanco).
+
+   Para cambiar una foto: edita el src del <img> correspondiente más abajo.
+   Para offline 100%: descarga los .jpg a una carpeta /img/ y cambia los src
+   por  img/hero.jpg ,  img/calafquen.jpg , etc.
+   ========================================================================= */
+:root{
+  --accent:#a07d54;        /* bronce. Alternativas: #9c7a48 #b08d4f #3d5a6c */
+  --accent-dark:#8c6b46;
+  --ov:0.45;               /* intensidad del overlay del hero (0.15–0.8) */
+  --fallback:linear-gradient(125deg,#34454d 0%,#243642 60%,#1b2a31 100%);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#f4f0e9;color:#243642;-webkit-font-smoothing:antialiased;font-family:'Hanken Grotesk',sans-serif;overflow-x:hidden;max-width:100vw}
+::selection{background:var(--accent);color:#f4f0e9}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+
+@keyframes slowzoom{from{transform:scale(1)}to{transform:scale(1.08)}}
+@keyframes fadeup{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+
+.serif{font-family:'Cormorant Garamond',serif}
+.mono{font-family:'Spline Sans Mono',monospace}
+
+/* ---------- NAV ---------- */
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:18px 48px;background:rgba(244,240,233,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(36,54,66,.10)}
+.nav-brand{display:flex;flex-direction:column;line-height:1}
+.nav-brand b{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:500;letter-spacing:.02em;color:#243642}
+.nav-brand small{font-family:'Spline Sans Mono',monospace;font-size:9px;letter-spacing:.34em;text-transform:uppercase;color:var(--accent);margin-top:3px}
+.nav-links{display:flex;align-items:center;gap:34px;font-size:13px;letter-spacing:.04em;color:#3d4f5a}
+.nav-links a{transition:color .25s}
+.nav-links a:hover{color:#243642}
+.btn-reservar{padding:11px 22px;border:1px solid var(--accent);color:#243642;letter-spacing:.12em;text-transform:uppercase;font-size:11px;font-weight:600;transition:all .3s}
+.btn-reservar:hover{background:var(--accent);color:#f4f0e9}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;height:100vh;min-height:680px;overflow:hidden;display:flex;align-items:flex-end;background:var(--fallback)}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:slowzoom 24s ease-out forwards}
+.hero-ov{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,30,38,calc(var(--ov)*.6)) 0%,rgba(20,30,38,0) 28%,rgba(18,26,32,calc(var(--ov)*.55)) 62%,rgba(15,22,28,calc(var(--ov)*1.5)) 100%)}
+.hero-inner{position:relative;z-index:2;padding:0 48px 72px;max-width:1080px;animation:fadeup 1.1s ease-out both}
+.hero-eyebrow{font-family:'Spline Sans Mono',monospace;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:#e7c98a}
+.hero h1{font-family:'Cormorant Garamond',serif;font-weight:300;color:#f6f2ea;font-size:clamp(52px,7vw,108px);line-height:.96;letter-spacing:-.01em;margin:22px 0 0}
+.hero h1 em{font-style:italic;color:#efe2c8}
+.hero p{max-width:540px;margin-top:26px;font-size:18px;line-height:1.6;color:rgba(244,240,233,.86);font-weight:300}
+.hero-ctas{display:flex;gap:18px;margin-top:38px;flex-wrap:wrap}
+.cta{padding:16px 30px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;transition:all .3s}
+.cta-primary{background:var(--accent);color:#f7f3ec}
+.cta-primary:hover{background:var(--accent-dark)}
+.cta-ghost{border:1px solid rgba(244,240,233,.55);color:#f4f0e9}
+.cta-ghost:hover{background:rgba(244,240,233,.12)}
+
+/* ---------- secciones claras ---------- */
+.statement{padding:120px 48px;max-width:1080px;margin:0 auto;text-align:center}
+.eyebrow{font-family:'Spline Sans Mono',monospace;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--accent)}
+.statement p{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(28px,3.6vw,46px);line-height:1.32;color:#2b3d48;margin-top:30px;letter-spacing:-.01em;text-wrap:balance}
+.stats{display:flex;justify-content:center;gap:60px;margin-top:64px;flex-wrap:wrap}
+.stat-n{font-family:'Cormorant Garamond',serif;font-size:46px;color:var(--accent)}
+.stat-l{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#6b7680;margin-top:4px}
+
+/* ---------- DESTINOS / LAGOS ---------- */
+.destinos{padding:30px 48px 110px;max-width:1320px;margin:0 auto}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;border-top:1px solid rgba(36,54,66,.16);padding-top:30px;margin-bottom:46px;flex-wrap:wrap;gap:16px}
+.sec-head h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(34px,4.4vw,60px);line-height:1;color:#243642}
+.sec-head .list{font-family:'Spline Sans Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#6b7680;max-width:340px;text-align:right}
+
+.grid-top{display:grid;grid-template-columns:1.4fr 1fr;gap:22px}
+.grid-bottom{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:22px}
+.col-2{display:grid;grid-template-rows:1fr 1fr;gap:22px}
+
+.lake{position:relative;overflow:hidden;display:flex;align-items:flex-end;background:var(--fallback)}
+.lake .img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.lake:hover .img{transform:scale(1.04)}
+.lake .ov{position:absolute;inset:0}
+.lake .tag{position:absolute;top:14px;left:14px;font-family:'Spline Sans Mono',monospace;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:rgba(244,240,233,.85);background:rgba(20,30,38,.32);padding:3px 7px;z-index:2}
+.lake .body{position:relative;z-index:2}
+.lake h3{font-family:'Cormorant Garamond',serif;font-weight:400;color:#f6f2ea;line-height:1}
+.lake p{color:rgba(244,240,233,.85);font-weight:300}
+
+.lake-feature{min-height:460px}
+.lake-feature .ov{background:linear-gradient(180deg,rgba(20,30,38,0) 40%,rgba(18,28,34,.72) 100%)}
+.lake-feature .body{padding:30px}
+.lake-feature .sub{font-family:'Spline Sans Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#e7c98a}
+.lake-feature h3{font-size:40px;margin-top:8px}
+.lake-feature p{font-size:14px;margin-top:8px;max-width:380px}
+
+.lake-md{min-height:219px}
+.lake-md .ov{background:linear-gradient(180deg,rgba(20,30,38,0) 45%,rgba(18,28,34,.7) 100%)}
+.lake-md .body{padding:22px}
+.lake-md h3{font-size:30px}
+.lake-md p{font-size:13px;margin-top:5px}
+
+.lake-sm{min-height:240px}
+.lake-sm .ov{background:linear-gradient(180deg,rgba(20,30,38,0) 50%,rgba(18,28,34,.68) 100%)}
+.lake-sm .body{padding:22px}
+.lake-sm h3{font-size:28px}
+.lake-sm p{font-size:13px;margin-top:4px}
+
+/* ---------- EXPERIENCIAS ---------- */
+.exp-sec{background:#1b2a31;padding:110px 48px}
+.exp-wrap{max-width:1320px;margin:0 auto}
+.exp-head{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:56px;flex-wrap:wrap;gap:16px}
+.exp-head .eyebrow{color:#e7c98a}
+.exp-head h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(34px,4.4vw,60px);color:#f4f0e9;line-height:1;margin-top:14px}
+.exp-head p{max-width:360px;color:rgba(244,240,233,.7);font-size:14px;line-height:1.6;font-weight:300}
+.exp-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(244,240,233,.12);border:1px solid rgba(244,240,233,.12)}
+.exp{background:#1b2a31;padding:34px 28px;min-height:280px;display:flex;flex-direction:column;justify-content:space-between;transition:background .3s}
+.exp:hover{background:#21333b}
+.exp .num{font-family:'Spline Sans Mono',monospace;font-size:11px;color:var(--accent)}
+.exp h3{font-family:'Cormorant Garamond',serif;font-size:28px;color:#f4f0e9;font-weight:400;line-height:1.05}
+.exp p{color:rgba(244,240,233,.68);font-size:13.5px;margin-top:10px;line-height:1.55;font-weight:300}
+
+/* ---------- LODGES ---------- */
+.lodges{padding:120px 48px;max-width:1320px;margin:0 auto}
+.lodges-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.lodge-photo{position:relative;min-height:560px;overflow:hidden;background:var(--fallback)}
+.lodge-photo .img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.lodge-photo .ov{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,30,38,0) 55%,rgba(18,28,34,.5) 100%)}
+.lodge-photo .tag{position:absolute;bottom:16px;left:16px;font-family:'Spline Sans Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:rgba(244,240,233,.9);background:rgba(20,30,38,.34);padding:5px 9px;z-index:2}
+.lodges h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(34px,4.2vw,58px);line-height:1.02;color:#243642;margin-top:16px}
+.lodges .lead{color:#4a5a64;font-size:16px;line-height:1.7;margin-top:22px;max-width:480px;font-weight:300}
+.amenities{margin-top:34px}
+.amen{display:flex;justify-content:space-between;padding:18px 0;border-top:1px solid rgba(36,54,66,.15)}
+.amen:last-child{border-bottom:1px solid rgba(36,54,66,.15)}
+.amen span{font-size:15px;color:#243642}
+.amen b{font-family:'Spline Sans Mono',monospace;font-size:12px;color:var(--accent);font-weight:400}
+
+/* ---------- PAQUETES ---------- */
+.paq-sec{background:#ece6db;padding:110px 48px}
+.paq-wrap{max-width:1320px;margin:0 auto}
+.paq-head{text-align:center;margin-bottom:60px}
+.paq-head h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(34px,4.4vw,60px);color:#243642;line-height:1;margin-top:14px}
+.paq-head p{color:#6b7680;font-size:14px;margin-top:14px}
+.paq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.paq{padding:40px 34px;display:flex;flex-direction:column}
+.paq-light{background:#f6f2ea;border:1px solid rgba(36,54,66,.12)}
+.paq-dark{background:#1b2a31;position:relative;transform:translateY(-12px);box-shadow:0 30px 60px -30px rgba(20,30,38,.6)}
+.paq .kicker{font-family:'Spline Sans Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
+.paq-dark .kicker{color:#e7c98a}
+.paq h3{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:34px;color:#243642;margin-top:10px;line-height:1}
+.paq-dark h3{color:#f4f0e9}
+.paq .desc{color:#5a6770;font-size:14px;line-height:1.6;margin-top:14px;font-weight:300;flex:1}
+.paq-dark .desc{color:rgba(244,240,233,.72)}
+.paq .price{margin:24px 0;display:flex;align-items:baseline;gap:8px}
+.paq .price b{font-family:'Cormorant Garamond',serif;font-size:46px;color:#243642;font-weight:400}
+.paq-dark .price b{color:#f4f0e9}
+.paq .price small{font-size:12px;color:#6b7680}
+.paq-dark .price small{color:rgba(244,240,233,.6)}
+.paq .badge{position:absolute;top:18px;right:18px;font-family:'Spline Sans Mono',monospace;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:#1b2a31;background:#e7c98a;padding:4px 8px}
+.paq-cta{text-align:center;padding:15px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;transition:all .3s}
+.paq-cta.outline{border:1px solid var(--accent);color:#243642}
+.paq-cta.outline:hover{background:var(--accent);color:#f6f2ea}
+.paq-cta.fill{background:var(--accent);color:#f6f2ea}
+.paq-cta.fill:hover{background:var(--accent-dark)}
+.paq-foot{text-align:center;color:#8a8170;font-size:12px;margin-top:34px;font-family:'Spline Sans Mono',monospace}
+
+/* ---------- RESERVA ---------- */
+.reserva{position:relative;padding:120px 48px;overflow:hidden;background:var(--fallback)}
+.reserva .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.reserva .ov{position:absolute;inset:0;background:linear-gradient(120deg,rgba(20,30,38,.85),rgba(20,30,38,.55))}
+.reserva-grid{position:relative;z-index:2;max-width:1080px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.reserva .eyebrow{color:#e7c98a}
+.reserva h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(34px,4.2vw,56px);line-height:1.04;color:#f6f2ea;margin-top:16px}
+.reserva .lead{color:rgba(244,240,233,.78);font-size:16px;line-height:1.7;margin-top:20px;max-width:420px;font-weight:300}
+.reserva .contact{margin-top:30px;font-family:'Spline Sans Mono',monospace;font-size:13px;color:rgba(244,240,233,.7);line-height:2}
+.reserva .contact a{transition:color .25s}
+.reserva .contact a:hover{color:#f4f0e9}
+.form-card{background:rgba(244,240,233,.97);padding:38px 34px;display:flex;flex-direction:column;gap:16px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form-card input,.form-card select,.form-card textarea{padding:13px 14px;border:1px solid rgba(36,54,66,.2);background:transparent;font-family:'Hanken Grotesk',sans-serif;font-size:14px;color:#243642;width:100%;transition:border-color .25s}
+.form-card input:focus,.form-card select:focus,.form-card textarea:focus{outline:none;border-color:var(--accent)}
+.form-card textarea{resize:vertical}
+.form-card button{padding:16px;background:var(--accent);color:#f6f2ea;border:none;font-family:'Hanken Grotesk',sans-serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;cursor:pointer;transition:background .3s}
+.form-card button:hover{background:var(--accent-dark)}
+.gracias{background:rgba(244,240,233,.97);padding:48px 40px;text-align:center;display:none}
+.gracias .t{font-family:'Cormorant Garamond',serif;font-size:40px;color:var(--accent)}
+.gracias p{color:#3d4f5a;font-size:15px;margin-top:12px;line-height:1.6}
+
+/* ---------- FOOTER ---------- */
+.footer{background:#141f24;padding:64px 48px 40px}
+.footer-top{max-width:1320px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:30px;border-bottom:1px solid rgba(244,240,233,.12);padding-bottom:40px}
+.footer-brand .b{font-family:'Cormorant Garamond',serif;font-size:30px;color:#f4f0e9;font-weight:500}
+.footer-brand .s{font-family:'Spline Sans Mono',monospace;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--accent);margin-top:6px}
+.footer-cols{display:flex;gap:60px;flex-wrap:wrap;font-size:14px}
+.footer-col{display:flex;flex-direction:column;gap:10px;color:rgba(244,240,233,.7)}
+.footer-col .h{font-family:'Spline Sans Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(244,240,233,.4);margin-bottom:4px}
+.footer-col a{transition:color .25s}
+.footer-col a:hover{color:#f4f0e9}
+.footer-bottom{max-width:1320px;margin:18px auto 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-family:'Spline Sans Mono',monospace;font-size:11px;color:rgba(244,240,233,.4)}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:960px){
+  .nav{padding:16px 24px}
+  .nav-links a:not(.btn-reservar){display:none}
+  .hero-inner{padding:0 24px 56px}
+  .statement,.destinos,.lodges,.exp-sec,.paq-sec,.reserva,.exp-wrap,.footer{padding-left:24px;padding-right:24px}
+  .statement,.exp-sec,.paq-sec,.lodges,.reserva{padding-top:80px;padding-bottom:80px}
+  .grid-top{grid-template-columns:1fr}
+  .grid-bottom{grid-template-columns:1fr 1fr}
+  .exp-grid{grid-template-columns:repeat(2,1fr)}
+  .lodges-grid{grid-template-columns:1fr;gap:40px}
+  .paq-grid{grid-template-columns:1fr}
+  .paq-dark{transform:none}
+  .reserva-grid{grid-template-columns:1fr;gap:40px}
+}
+@media (max-width:560px){
+  .nav{padding:14px 18px}
+  .nav-brand b{font-size:22px}
+  .hero{min-height:600px}
+  .hero-inner{padding:0 18px 44px}
+  .statement,.destinos,.lodges,.exp-sec,.paq-sec,.reserva,.exp-wrap,.footer{padding-left:18px;padding-right:18px}
+  .stats{gap:30px}
+  .grid-bottom{grid-template-columns:1fr}
+  .exp-grid{grid-template-columns:1fr}
+  .sec-head .list{text-align:left;max-width:none}
+  .form-row{grid-template-columns:1fr}
+  .footer-top{flex-direction:column}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="#top" class="nav-brand"><b>Austral Lacustre</b><small>Valdivia &middot; Sur de Chile</small></a>
+  <div class="nav-links">
+    <a href="#destinos">Destinos</a>
+    <a href="#experiencias">Experiencias</a>
+    <a href="#lodges">Lodges</a>
+    <a href="#paquetes" data-prices-link>Colecciones</a>
+    <a href="#reserva" class="btn-reservar">Reservar</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header id="top" class="hero">
+  <img class="hero-img" src="https://images.unsplash.com/photo-1667759318615-757c8ddbfa7a?auto=format&fit=crop&q=80&w=2400" alt="Amanecer sobre un lago entre montañas en el sur de Chile" fetchpriority="high" onerror="this.style.display='none'">
+  <div class="hero-ov"></div>
+  <div class="hero-inner">
+    <span class="hero-eyebrow">Colección de viajes privados</span>
+    <h1 class="serif">El sur de Chile,<br><em>a orillas del agua.</em></h1>
+    <p>Lagos de aguas vivas, selva valdiviana y volcanes nevados. Casas frente al agua con muelle propio y un servicio pensado, hasta el último detalle, para quien lo espera todo.</p>
+    <div class="hero-ctas">
+      <a href="#paquetes" class="cta cta-primary" data-prices-link>Ver colecciones</a>
+      <a href="#experiencias" class="cta cta-ghost">Las experiencias</a>
+    </div>
+  </div>
+</header>
+
+<!-- INTRO STATEMENT -->
+<section class="statement">
+  <span class="eyebrow">La región de los Siete Lagos</span>
+  <p class="serif">Entre Valdivia y la cordillera se despliega un territorio de lagos profundos, ríos de pesca legendaria y bosque milenario. Curamos cada estadía como una sola pieza: dónde dormir, qué navegar, a quién confiar el día.</p>
+  <div class="stats">
+    <div><div class="stat-n serif">7</div><div class="stat-l">Lagos cordilleranos</div></div>
+    <div><div class="stat-n serif">24/7</div><div class="stat-l">Concierge dedicado</div></div>
+    <div><div class="stat-n serif">100%</div><div class="stat-l">Itinerarios privados</div></div>
+  </div>
+</section>
+
+<!-- DESTINOS / LAGOS -->
+<section id="destinos" class="destinos">
+  <div class="sec-head">
+    <h2 class="serif">Los lagos</h2>
+    <span class="list">Calafquén &middot; Panguipulli &middot; Riñihue &middot; Ranco &middot; Pirihueico</span>
+  </div>
+
+  <div class="grid-top">
+    <a href="#reserva" class="lake lake-feature">
+      <img class="img" src="https://images.unsplash.com/photo-1715273157640-b0c2a2bec178?auto=format&fit=crop&q=80&w=1600" alt="Lago Calafquén" loading="lazy" onerror="this.style.display='none'">
+      <div class="ov"></div>
+      <span class="tag">Lago Calafquén</span>
+      <div class="body">
+        <span class="sub">Aguas turquesa</span>
+        <h3 class="serif">Calafquén</h3>
+        <p>Playas de arena volcánica y termas a pocos minutos. El corazón termal de la región.</p>
+      </div>
+    </a>
+
+    <div class="col-2">
+      <a href="#reserva" class="lake lake-md">
+        <img class="img" src="https://images.unsplash.com/photo-1684106498206-86e97497f731?auto=format&fit=crop&q=80&w=1400" alt="Lago Panguipulli" loading="lazy" onerror="this.style.display='none'">
+        <div class="ov"></div>
+        <span class="tag">Lago Panguipulli</span>
+        <div class="body"><h3 class="serif">Panguipulli</h3><p>La puerta a los Siete Lagos y al volcán Mocho-Choshuenco.</p></div>
+      </a>
+      <a href="#reserva" class="lake lake-md">
+        <img class="img" src="https://images.unsplash.com/photo-1667759318933-23bdcd4a0f11?auto=format&fit=crop&q=80&w=1400" alt="Lago Riñihue" loading="lazy" onerror="this.style.display='none'">
+        <div class="ov"></div>
+        <span class="tag">Lago Riñihue</span>
+        <div class="body"><h3 class="serif">Riñihue</h3><p>Silencio absoluto y el nacimiento del río San Pedro.</p></div>
+      </a>
+    </div>
+  </div>
+
+  <div class="grid-bottom">
+    <a href="#reserva" class="lake lake-sm">
+      <img class="img" src="https://images.unsplash.com/photo-1663431905837-09cf339461ce?auto=format&fit=crop&q=80&w=1200" alt="Lago Ranco" loading="lazy" onerror="this.style.display='none'">
+      <div class="ov"></div>
+      <span class="tag">Lago Ranco</span>
+      <div class="body"><h3 class="serif">Ranco</h3><p>Islas privadas y casonas patrimoniales frente al agua.</p></div>
+    </a>
+    <a href="#reserva" class="lake lake-sm">
+      <img class="img" src="https://images.unsplash.com/photo-1728501298143-065a9a70eb53?auto=format&fit=crop&q=80&w=1200" alt="Lago Pirihueico" loading="lazy" onerror="this.style.display='none'">
+      <div class="ov"></div>
+      <span class="tag">Lago Pirihueico</span>
+      <div class="body"><h3 class="serif">Pirihueico</h3><p>Bosque virgen y el cruce de lagos hacia Argentina.</p></div>
+    </a>
+    <a href="#reserva" class="lake lake-sm">
+      <img class="img" src="https://images.unsplash.com/photo-1755500383153-74044f17b8ac?auto=format&fit=crop&q=80&w=1200" alt="Río Valdivia" loading="lazy" onerror="this.style.display='none'">
+      <div class="ov"></div>
+      <span class="tag">Río Valdivia</span>
+      <div class="body"><h3 class="serif">Río Valdivia</h3><p>Navegación, humedales y la ciudad fluvial del sur.</p></div>
+    </a>
+  </div>
+</section>
+
+<!-- EXPERIENCIAS -->
+<section id="experiencias" class="exp-sec">
+  <div class="exp-wrap">
+    <div class="exp-head">
+      <div><span class="eyebrow">Cada día, una experiencia</span><h2 class="serif">Las experiencias</h2></div>
+      <p>Guías privados, equipo de primer nivel y grupos reducidos. Diseñamos la jornada según el clima, el agua y su ritmo.</p>
+    </div>
+    <div class="exp-grid">
+      <div class="exp"><span class="num">01</span><div><h3 class="serif">Pesca con mosca</h3><p>Ríos San Pedro y Enco, truchas fario y arcoíris. Guías de catch &amp; release y lanchas dedicadas.</p></div></div>
+      <div class="exp"><span class="num">02</span><div><h3 class="serif">Navegación privada</h3><p>Embarcaciones con capitán, picnic a bordo y fondeo en calas que solo se alcanzan por agua.</p></div></div>
+      <div class="exp"><span class="num">03</span><div><h3 class="serif">Cabalgatas</h3><p>Travesías a caballo por la selva valdiviana con baqueanos locales y almuerzo de campo.</p></div></div>
+      <div class="exp"><span class="num">04</span><div><h3 class="serif">Trekking &amp; volcán</h3><p>Senderos del Parque Mocho-Choshuenco y bosques de alerces con guía de montaña.</p></div></div>
+      <div class="exp"><span class="num">05</span><div><h3 class="serif">Termas &amp; spa</h3><p>Termas de Liquiñe y Coñaripe en jornadas privadas, masajes y rituales de bosque.</p></div></div>
+      <div class="exp"><span class="num">06</span><div><h3 class="serif">Ski Mocho-Choshuenco</h3><p>Nieve de volcán con vistas al lago. Ascensos guiados y descensos fuera de pista en temporada.</p></div></div>
+      <div class="exp"><span class="num">07</span><div><h3 class="serif">Gastronomía &amp; vinos</h3><p>Mesas de autor, mariscos del sur y cavas de vinos chilenos guiadas por sommelier.</p></div></div>
+      <div class="exp"><span class="num">08</span><div><h3 class="serif">Bienestar en familia</h3><p>Jornadas a medida para niños y adultos: kayak suave, fogatas y observación de aves.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- LODGES -->
+<section id="lodges" class="lodges">
+  <div class="lodges-grid">
+    <div class="lodge-photo">
+      <img class="img" src="https://images.unsplash.com/photo-1541420937988-702d78cb9fa1?auto=format&fit=crop&q=80&w=1400" alt="Casa con muelle privado a la orilla del lago" loading="lazy" onerror="this.style.display='none'">
+      <div class="ov"></div>
+      <span class="tag">Casa con muelle privado</span>
+    </div>
+    <div>
+      <span class="eyebrow">Alojamiento</span>
+      <h2 class="serif">Casas frente al agua,<br>muelle propio.</h2>
+      <p class="lead">Una colección reducida de lodges boutique y residencias privadas a la orilla del lago. Muelles de primer nivel, embarcación disponible, mayordomía y chef a su servicio. El mejor servicio del sur, sin que tenga que pedirlo.</p>
+      <div class="amenities">
+        <div class="amen"><span>Muelle privado y embarcación</span><b>incluido</b></div>
+        <div class="amen"><span>Chef y mayordomo</span><b>incluido</b></div>
+        <div class="amen"><span>Concierge 24/7 y traslados</span><b>incluido</b></div>
+        <div class="amen"><span>Spa y termas a domicilio</span><b>a pedido</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAQUETES -->
+<section id="paquetes" class="paq-sec">
+  <div class="paq-wrap">
+    <div class="paq-head">
+      <span class="eyebrow">Colecciones</span>
+      <h2 class="serif">Itinerarios curados</h2>
+      <p>Valores referenciales por persona, base doble &middot; 5 noches &middot; todo incluido.</p>
+    </div>
+    <div class="paq-grid">
+      <div class="paq paq-light">
+        <span class="kicker">Esencial</span><h3 class="serif">Lago &amp; Bosque</h3>
+        <p class="desc">Casa frente al lago, navegación privada, cabalgata y una jornada de termas. La introducción perfecta a la región.</p>
+        <div class="price"><b class="serif">USD 4.200</b><small>/ persona</small></div>
+        <a href="#reserva" class="paq-cta outline">Consultar</a>
+      </div>
+      <div class="paq paq-dark">
+        <span class="badge">Más elegida</span><span class="kicker">Firma</span><h3 class="serif">Siete Lagos</h3>
+        <p class="desc">Recorrido entre tres lagos, pesca con mosca guiada, trekking al volcán, cena de autor con maridaje y spa privado.</p>
+        <div class="price"><b class="serif">USD 7.900</b><small>/ persona</small></div>
+        <a href="#reserva" class="paq-cta fill">Consultar</a>
+      </div>
+      <div class="paq paq-light">
+        <span class="kicker">Privé</span><h3 class="serif">Cumbre &amp; Nieve</h3>
+        <p class="desc">Residencia exclusiva, ski guiado en el Mocho-Choshuenco, heli-experiencia opcional y servicio totalmente a medida.</p>
+        <div class="price"><b class="serif">USD 12.500</b><small>/ persona</small></div>
+        <a href="#reserva" class="paq-cta outline">Consultar</a>
+      </div>
+    </div>
+    <p class="paq-foot">Cada itinerario se diseña a medida. Temporadas de ski y pesca sujetas a disponibilidad.</p>
+  </div>
+</section>
+
+<!-- RESERVA -->
+<section id="reserva" class="reserva">
+  <img class="bg" src="https://images.unsplash.com/photo-1755500383153-74044f17b8ac?auto=format&fit=crop&q=80&w=2000" alt="Atardecer en el muelle de un lago del sur de Chile" loading="lazy" onerror="this.style.display='none'">
+  <div class="ov"></div>
+  <div class="reserva-grid">
+    <div>
+      <span class="eyebrow">Reservas &amp; consultas</span>
+      <h2 class="serif">Diseñemos su viaje al sur.</h2>
+      <p class="lead">Cuéntenos qué imagina. Un asesor de viajes le responderá en menos de 24 horas con una propuesta a medida.</p>
+      <div class="contact">
+        <div><a href="mailto:reservas@australlacustre.cl">reservas@australlacustre.cl</a></div>
+        <div><a href="tel:+56900000000">+56 9 0000 0000</a></div>
+        <div>Valdivia &middot; Los Ríos &middot; Chile</div>
+      </div>
+    </div>
+
+    <form class="form-card" id="reserva-form" novalidate>
+      <div class="form-row">
+        <input name="nombre" placeholder="Nombre" required>
+        <input name="apellido" placeholder="Apellido" required>
+      </div>
+      <input type="email" name="email" placeholder="Correo electrónico" required>
+      <select name="interes" required>
+        <option value="">Experiencia de interés…</option>
+        <option>Lago &amp; Bosque</option><option>Siete Lagos</option><option>Cumbre &amp; Nieve</option><option>Pesca con mosca</option><option>A medida</option>
+      </select>
+      <textarea name="detalle" placeholder="Fechas y número de viajeros" rows="3"></textarea>
+      <button type="submit">Solicitar propuesta</button>
+    </form>
+
+    <div class="gracias" id="reserva-gracias">
+      <div class="t serif">Gracias</div>
+      <p>Hemos recibido su solicitud. Un asesor le escribirá muy pronto para comenzar a planear su estadía.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand"><div class="b serif">Austral Lacustre</div><div class="s">Colección de viajes &middot; Sur de Chile</div></div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <span class="h">Explorar</span>
+        <a href="#destinos">Los lagos</a><a href="#experiencias">Experiencias</a><a href="#lodges">Lodges</a><a href="#paquetes" data-prices-link>Colecciones</a>
+      </div>
+      <div class="footer-col">
+        <span class="h">Contacto</span>
+        <a href="mailto:reservas@australlacustre.cl">reservas@australlacustre.cl</a><a href="tel:+56900000000">+56 9 0000 0000</a><span>Valdivia, Los Ríos</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Austral Lacustre. Todos los derechos reservados.</span>
+    <span>Valdivia &middot; Panguipulli &middot; Lago Ranco</span>
+  </div>
+</footer>
+
+<script>
+var SHOW_PRICES = true;   // false -> oculta la sección Colecciones y sus links
+if (!SHOW_PRICES) {
+  var paq = document.getElementById('paquetes');
+  if (paq) paq.style.display = 'none';
+  document.querySelectorAll('[data-prices-link]').forEach(function(el){ el.style.display='none'; });
+}
+
+var form = document.getElementById('reserva-form');
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+  if (!form.checkValidity()) { form.reportValidity(); return; }
+  var data = Object.fromEntries(new FormData(form).entries());
+  // TODO producción: enviar `data` a tu backend (Supabase / Make.com / WhatsApp / CRM).
+  console.log('Lead Austral Lacustre:', data);
+  document.getElementById('reserva-form').style.display = 'none';
+  document.getElementById('reserva-gracias').style.display = 'block';
+});
+</script>
+</body>
+</html>
